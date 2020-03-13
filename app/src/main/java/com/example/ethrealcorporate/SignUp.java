@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -47,6 +49,7 @@ public class SignUp extends AppCompatActivity {
                 final AlertDialog.Builder builder =new AlertDialog.Builder(SignUp.this);
                 if(email.getText().toString().isEmpty())
                 {
+                    builder.setTitle("Empty Field");
                     builder.setMessage("Please Enter Email Address").setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
@@ -57,6 +60,7 @@ public class SignUp extends AppCompatActivity {
                     alert.show();
                 }
                 else if (email.getText().toString().trim().matches(em)) {
+                    builder.setTitle("Successful");
                     builder.setMessage("Email Varified").setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
@@ -64,6 +68,7 @@ public class SignUp extends AppCompatActivity {
                                 Intent intent = new Intent(SignUp.this, MainActivity.class);
                                 startActivity(intent);
                             } else if (user.getText().toString().isEmpty()) {
+                                builder.setTitle("Empty Field");
                                 builder.setMessage("Enter User Name").setPositiveButton("ok", new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
@@ -73,6 +78,7 @@ public class SignUp extends AppCompatActivity {
                                 AlertDialog alert = builder.create();
                                 alert.show();
                             } else if (pass.getText().toString().trim().isEmpty()) {
+                                builder.setTitle("Empty Field");
                                 builder.setMessage("Please enter the Password").setPositiveButton("ok", new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {

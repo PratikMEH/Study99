@@ -9,15 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Forget"></activity>
+        <activity android:name=".kitab2"></activity>
+        <activity android:name=".kitab1" />
+        <activity android:name=".Prfl" />
+        <activity android:name=".Recommendation" />
+        <activity android:name=".Bookmarks" />
+        <activity android:name=".Activities" />
+        <activity android:name=".Books" />
+        <activity android:name=".Topics" />
+        <activity android:name=".Forget" />
         <activity android:name=".SignUp" />
         <activity android:name=".Dashboard" />
-        <activity
-            android:name=".MainActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".splash"
-            android:screenOrientation="portrait">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

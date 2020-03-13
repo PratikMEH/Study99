@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/drwProfile"
+            android:icon="@drawable/prf"
+            android:title="Profile"/>
+        <item android:id="@+id/drwBooks"
+            android:icon="@drawable/tpcs"
+            android:title="Books"/>
+        <item android:id="@+id/drwBookmarks"
+            android:icon="@drawable/bkmrk"
+            android:title="Bookmarks"/>
+        <item android:id="@+id/drwRecommendation"
+            android:icon="@drawable/rcmnd"
+            android:title="Recommendation"/>
+        <item android:id="@+id/drwLogout"
+            android:icon="@drawable/logout"
+            android:title="Logout"/>
+
+
+    </group>
+
+</menu>

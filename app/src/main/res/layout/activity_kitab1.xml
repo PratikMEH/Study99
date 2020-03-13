@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".kitab1">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ii1"
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/daabk1" />
+
+    <TextView
+        android:id="@+id/ttl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ii1"
+        android:text="Design And Analysis Of Algorithm"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="#090000"
+        android:textSize="20dp"/>
+    <RatingBar
+        android:id="@+id/rate1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ii1"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/ttl1"
+        android:isIndicator="true"
+        android:rating="3"
+        android:scaleY=".5"
+        android:scaleX=".5"
+        android:transformPivotX="0dp"
+        android:transformPivotY="0dp"
+        android:layout_marginTop="5dp"/>
+
+        <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="148dp"
+        android:text="Description"
+        android:textSize="20dp"
+        android:textStyle="bold"
+            android:paddingStart="10dp"
+        android:textColor="#090000"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginEnd="-1dp"
+            android:paddingStart="10dp"
+            android:text="Design and Analysis of Algorithms is designed to serve as a textbook for the undergraduate students of computer science engineering and information technology as well as postgraduate students of computer applications. The book aims to empower students with in-depth knowledge of the fundamental concepts and the design, analysis, and implementation aspects of algorithms." />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="324dp"
+            android:layout_marginEnd="8dp"
+            android:paddingStart="10dp"
+            android:text="About The Author"
+            android:textColor="#090000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="354dp"
+            android:layout_marginEnd="0dp"
+            android:paddingStart="10dp"
+            android:text="S. Sridhar is Professor, Department of Information Science and Technology, College of Engineering Guindy Campus, Anna University, Chennai. He has more than 20 years of active teaching and research experience, including a brief stint at National Institute of Technology (NIT), Tiruchirappalli. A PhD from Anna University, he has specialized in medical imaging and has published several papers on the subject." />
+
+        <TextView
+            android:id="@+id/btb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="510dp"
+            android:layout_marginEnd="7dp"
+            android:paddingStart="10dp"
+            android:text="Buy This Book"
+            android:textColor="#090000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/btb"
+            android:background="#6F474242"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/buy1"
+            android:background="#6F474242"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/buy2"
+            android:background="#6F474242"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="563dp"
+        android:layout_marginEnd="369dp"
+        app:srcCompat="@drawable/flpkrt" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="610dp"
+        android:text="Amazon"
+
+        android:textStyle="bold"
+        android:textColor="#0C0000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="580dp"
+        android:text="Rs. 571" />
+
+    <Button
+        android:id="@+id/buy1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="305dp"
+        android:layout_marginTop="555dp"
+        android:text="Buy Now "
+        android:textColor="#fff"
+        android:background="#ED7309"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="617dp"
+        android:layout_marginEnd="369dp"
+        app:srcCompat="@drawable/amz" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="555dp"
+        android:text="Flipkart"
+        android:textStyle="bold"
+        android:textColor="#0C0000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="635dp"
+        android:text="Rs. 470" />
+
+    <Button
+        android:id="@+id/buy2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="305dp"
+        android:layout_marginTop="612dp"
+        android:background="#ED7309"
+        android:text="Buy Now "
+        android:textColor="#fff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="93dp"
+            android:layout_marginTop="70dp"
+            android:text="Author: S Sridhar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="92dp"
+            android:layout_marginTop="95dp"
+            android:text="Language: English" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="92dp"
+            android:layout_marginTop="120dp"
+            android:text="Publication Date: 15/12/2014" />
+
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lst1"
+    android:orientation="vertical"
+    tools:context=".Topics">
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/srch"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:queryHint="Search"
+        android:background="@drawable/round"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"/>
+
+
+    <RelativeLayout
+        android:id="@+id/tpc1"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="#979DA8B1">
+
+        <TextView
+            android:id="@+id/tt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Design Analysis And Algorithm"
+            android:textColor="#000104"
+            android:textSize="20dp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tt1"
+            android:layout_marginLeft="10dp"
+            android:text="Our DAA Tutorial includes all topics of algorithm, asymptotic analysis, algorithm control structure, recurrence, master method, recursion tree method, shorting, etc."
+            android:textSize="15dp">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/but1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="357dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="13dp"
+            android:background="@drawable/bkmrk">
+
+        </Button>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="#979DA8B1">
+
+            <TextView
+                android:id="@+id/tt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Asymptotic Analysis"
+                android:textColor="#000104"
+                android:textSize="20dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tt2"
+                android:layout_marginLeft="10dp"
+                android:text="It is a technique of representing limiting behavior. The methodology has the applications across science. It can be used to analyze the performance of an algorithm for some large data set."
+                android:textSize="15dp">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/but2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bkmrk">
+
+            </Button>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="#979DA8B1">
+
+            <TextView
+                android:id="@+id/tt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Recurrece Relations"
+                android:textColor="#000104"
+                android:textSize="20dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tt3"
+                android:layout_marginLeft="10dp"
+                android:text="A recurrence is an equation or inequality that describes a function in terms of its values on smaller inputs. To solve a Recurrence Relation means to obtain a function defined on the natural numbers that satisfy the recurrence."
+                android:textSize="15sp">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/but3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bkmrk">
+
+            </Button>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:background="#979DA8B1">
+
+            <TextView
+                android:id="@+id/tt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Divide And Conquer"
+                android:textColor="#000104"
+                android:textSize="20dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tt4"
+                android:layout_marginLeft="10dp"
+                android:text="In algorithmic methods the problems are decided on each of the small pieces, and then merge all solutions into a global solution. This process of solving the problem is called the Divide and Conquer Strategy."
+                android:textSize="15dp">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/but4"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bkmrk">
+
+            </Button>
+
+
+        </RelativeLayout>
+
+
+
+</LinearLayout>

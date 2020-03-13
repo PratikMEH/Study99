@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -21,10 +22,13 @@ public class MainActivity extends AppCompatActivity {
     Button b;
 
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
+
         setContentView(R.layout.activity_main);
 
         email=(EditText)findViewById(R.id.ed1);
@@ -57,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
                 AlertDialog.Builder builder =new AlertDialog.Builder(MainActivity.this);
                 if(email.getText().toString().isEmpty())
                 {
+                    builder.setTitle("Alert");
                     builder.setMessage("Please Enter Email Address").setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
@@ -68,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else if (email.getText().toString().trim().matches(em))
                 {
+                    builder.setTitle("Successful");
                     builder.setMessage("Email Varified").setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
@@ -81,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                else
                 {
+                    builder.setTitle("Invalid Email");
                     builder.setMessage("Enter A Valid Email Address").setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
