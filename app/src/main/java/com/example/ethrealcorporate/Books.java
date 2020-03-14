@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RatingBar;
 
+import java.io.PrintWriter;
+
 public class Books extends AppCompatActivity {
     private RatingBar ratingBar1,ratingBar2,ratingBar3,ratingBar4;
     Button b1,b2,b3,b4;
@@ -15,7 +17,7 @@ public class Books extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().setTitle("Books");
+        getSupportActionBar().setTitle("Recommended Books");
         setContentView(R.layout.activity_books);
         ratingBar1=findViewById(R.id.rb1);
         ratingBar2=findViewById(R.id.rb2);
@@ -38,6 +40,27 @@ public class Books extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(Books.this,kitab1.class);
+                startActivity(intent);
+            }
+        });
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(Books.this,kitab2.class);
+                startActivity(intent);
+            }
+        });
+        b3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(Books.this,kitab3.class);
+                startActivity(intent);
+            }
+        });
+        b4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new  Intent(Books.this,kitab4.class);
                 startActivity(intent);
             }
         });

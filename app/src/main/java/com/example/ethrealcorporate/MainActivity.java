@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent=new Intent(MainActivity.this,SignUp.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -79,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
                         public void onClick(DialogInterface dialog, int which) {
                             Intent intent= new Intent(MainActivity.this, Dashboard.class);
                             startActivity(intent);
+                            finish();
 
                         }
                     });

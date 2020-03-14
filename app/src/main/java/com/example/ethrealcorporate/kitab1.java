@@ -19,8 +19,7 @@ public class kitab1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_kitab1);
-
-        getSupportActionBar().hide();
+        getSupportActionBar().setTitle("Books");
         buyy1=findViewById(R.id.buy1);
         buyy2=findViewById(R.id.buy2);
         ratingBarbk1=findViewById(R.id.rate1);

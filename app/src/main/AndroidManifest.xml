@@ -9,9 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".kitab2"></activity>
+        <activity android:name=".kitab4"></activity>
+        <activity android:name=".kitab3" />
+        <activity android:name=".kitab2" />
         <activity android:name=".kitab1" />
-        <activity android:name=".Prfl" />
+        <activity android:name=".Prfl"
+            android:theme="@style/AppTheme_noActionbar"/>
         <activity android:name=".Recommendation" />
         <activity android:name=".Bookmarks" />
         <activity android:name=".Activities" />

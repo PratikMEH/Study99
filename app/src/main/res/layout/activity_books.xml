@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Books"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:id="@+id/drawer_books">
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/content_main"/>
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/navigation_view"
+        app:menu="@menu/drawer_menu"
+        app:headerLayout="@layout/drawer_header"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"/>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -103,7 +116,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_toRightOf="@id/i2"
-            android:text="Design Analysis Of Algorithm"
+            android:text="Design Analysis And Algorithm"
             android:layout_marginLeft="10dp"
             android:textSize="20dp"
             android:textColor="#070000"
@@ -303,4 +316,4 @@
 
     </LinearLayout>
     </ScrollView>
-</LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

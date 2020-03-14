@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".kitab2">
+    tools:context=".kitab3">
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -18,14 +19,14 @@
                 android:layout_height="100dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="25dp"
-                android:src="@drawable/daabk2" />
+                android:src="@drawable/daabk3" />
 
             <TextView
                 android:id="@+id/ttl1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/ii1"
-                android:text="Design Analysis And Algorithm"
+                android:text="Design Methods And Analysis Of Algorithm"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
                 android:textStyle="bold"
@@ -39,7 +40,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_below="@id/ttl1"
                 android:isIndicator="true"
-                android:rating="4.5"
+                android:rating="3.5"
                 android:scaleY=".5"
                 android:scaleX=".5"
                 android:transformPivotX="0dp"
@@ -73,7 +74,7 @@
                 android:layout_marginTop="180dp"
                 android:layout_marginEnd="-1dp"
                 android:paddingStart="10dp"
-                android:text="Design and Analysis of Algorithms is designed to serve as a textbook for the undergraduate students of computer science engineering and information technology as well as postgraduate students of computer applications. The book aims to empower students with in-depth knowledge of the fundamental concepts and the design, analysis, and implementation aspects of algorithms." />
+                android:text="The design of correct and efficient algorithms for problem solving lies at the heart of computer science. This concise text, without being highly specialized, teaches the skills needed to master the essentials of this subject. With clear explanations and engaging writing style, the book places increased emphasis on algorithm design techniques rather than programming in order to develop in the reader the problem-solving skills." />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -101,7 +102,7 @@
                 android:layout_marginTop="354dp"
                 android:layout_marginEnd="0dp"
                 android:paddingStart="10dp"
-                android:text="Hari Mohan Pandey is a faculty at Edge Hill University, UK. He is specialized in computer science and engineering. His research area includes artificial intelligence, soft computing techniques, natural language processing and machine learning algorithms. He is author of various books in computer science engineering. He has published over 50 research papers in reputed journals and Conferences. He served as editor-in-chief, session chair, served as leading guest editor for the International Journals and delivered keynotes. He has been given the prestigious award “The Global Award for the Best Computer Science Faculty of the Year 2015”, award for completing INDO-US project GENTLE, award (Certificate of Exceptionalism) from the Prime Minister of India and award for developing innovative teaching and learning models" />
+                android:text="S.K. Basu, Ph.D., is Professor in the Department of Computer Science, Banaras Hindu University, Varanasi. He obtained his M.Tech. and Ph.D. degrees from Indian Statistical Institute, Kolkata and Jadavpur University, Kolkata respectively. He has been a visiting scientist in different Indian institutes and abroad. He was the Chairman of the Department of Computer Science, Banaras Hindu University several times and also held various other administrative positions in the same university. Some of his active research and publications are in the areas of Parallel and Distributed Processing, Simulation Modelling, Genetic Algorithms, Computer Systems, WSN, etc." />
 
             <TextView
                 android:id="@+id/btb"
@@ -129,13 +130,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:layout_marginTop="10dp"
-                android:layout_below="@id/buy21"
+                android:layout_below="@id/buy31"
                 android:background="#6F474242"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:layout_marginTop="10dp"
-                android:layout_below="@id/buy22"
+                android:layout_below="@id/buy32"
                 android:background="#6F474242"/>
 
             <ImageView
@@ -166,10 +167,10 @@
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="94dp"
                 android:layout_below="@id/flp"
-                android:text="Rs. 460" />
+                android:text="Rs. 283" />
 
             <Button
-                android:id="@+id/buy21"
+                android:id="@+id/buy31"
                 android:layout_width="wrap_content"
                 android:layout_height="35dp"
                 android:layout_below="@id/btb"
@@ -208,13 +209,13 @@
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="95dp"
                 android:layout_below="@id/amz"
-                android:text="Rs. 460" />
+                android:text="Rs. 304" />
 
             <Button
-                android:id="@+id/buy22"
+                android:id="@+id/buy32"
                 android:layout_width="wrap_content"
                 android:layout_height="35dp"
-                android:layout_below="@id/buy21"
+                android:layout_below="@id/buy31"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="305dp"
                 android:layout_marginTop="20dp"
@@ -228,23 +229,23 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="93dp"
-                android:layout_marginTop="70dp"
-                android:text="Author: Hari Mohan Pandey" />
+                android:layout_marginTop="90dp"
+                android:text="Author: S K Basu" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
-                android:layout_marginStart="92dp"
-                android:layout_marginTop="95dp"
+                android:layout_marginStart="93dp"
+                android:layout_marginTop="109dp"
                 android:text="Language: English" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="92dp"
-                android:layout_marginTop="120dp"
-                android:text="Paper Back: 560" />
+                android:layout_marginTop="130dp"
+                android:text="Paper Back: 400 Pages" />
 
         </RelativeLayout>
     </ScrollView>

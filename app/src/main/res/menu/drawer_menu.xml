@@ -6,7 +6,7 @@
             android:icon="@drawable/prf"
             android:title="Profile"/>
         <item android:id="@+id/drwBooks"
-            android:icon="@drawable/tpcs"
+            android:icon="@drawable/books"
             android:title="Books"/>
         <item android:id="@+id/drwBookmarks"
             android:icon="@drawable/bkmrk"
@@ -14,6 +14,8 @@
         <item android:id="@+id/drwRecommendation"
             android:icon="@drawable/rcmnd"
             android:title="Recommendation"/>
+    </group>
+    <group android:checkableBehavior="single">
         <item android:id="@+id/drwLogout"
             android:icon="@drawable/logout"
             android:title="Logout"/>

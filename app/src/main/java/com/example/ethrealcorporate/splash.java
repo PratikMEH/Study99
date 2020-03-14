@@ -28,6 +28,7 @@ public class splash extends AppCompatActivity {
                 finally {
                     Intent ob=new Intent(splash.this, MainActivity.class);
                     startActivity(ob);
+                    finish();
                 }
             }
         };thread.start();

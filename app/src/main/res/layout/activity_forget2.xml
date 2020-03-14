@@ -64,7 +64,7 @@
         android:layout_marginEnd="22dp"
         android:layout_marginBottom="77dp"
         android:background="#1731C3"
-        android:text="Reset Password"
+        android:text="Send Otp"
         android:textSize="15dp"
         android:textColor="#fff" />
 

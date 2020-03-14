@@ -10,14 +10,16 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.SearchView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
 public class Topics extends AppCompatActivity {
-    Button b1,b2,b3,b4;
+    ImageView b1,b2,b3,b4;
 
 
     @Override
