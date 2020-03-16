@@ -10,7 +10,7 @@ import android.view.inputmethod.InputConnectionWrapper;
 import android.widget.Button;
 
 public class Dashboard extends AppCompatActivity {
-    Button profile,topic,books,activity,bookmark,recommendation;
+    Button profile,topic,books,activity,bookmark,recommendation,pdf;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +23,7 @@ public class Dashboard extends AppCompatActivity {
         activity=findViewById(R.id.actbtn);
         bookmark=findViewById(R.id.bkkmrkbtn);
         recommendation=findViewById(R.id.rcmndbtn);
+        pdf=findViewById(R.id.pdfbtn);
 
 
         profile.setOnClickListener(new View.OnClickListener() {
@@ -74,6 +75,13 @@ public class Dashboard extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent= new Intent(Dashboard.this,Recommendation.class);
+                startActivity(intent);
+            }
+        });
+        pdf.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(Dashboard.this, com.example.ethrealcorporate.pdf.class);
                 startActivity(intent);
             }
         });

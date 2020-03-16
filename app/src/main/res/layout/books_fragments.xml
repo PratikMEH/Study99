@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:background="@drawable/ripple"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+                <ImageView
+                    android:id="@+id/i1"
+                    android:layout_width="70dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/cormen"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:id="@+id/ttl1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/i1"
+                    android:text="Introduction to Algorithm"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20dp"
+                    android:textColor="#070000"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/sttl1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/i1"
+                    android:layout_marginLeft="10dp"
+                    android:text="by Thomas H Cormen"
+                    android:layout_below="@id/ttl1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sttl1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_toEndOf="@+id/i1"
+                    android:layout_toRightOf="@id/i1"
+                    android:text="4.5"
+                    android:textStyle="bold"/>
+
+                <RatingBar
+                    android:id="@+id/rb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sttl1"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_toRightOf="@id/i1"
+                    android:scaleX=".5"
+                    android:scaleY=".5"
+                    android:isIndicator="true"
+                    android:rating="4.5"
+                    android:transformPivotX="0dp"
+                    android:transformPivotY="0dp" />
+
+                <Button
+                    android:id="@+id/pdf_view1"
+                    android:layout_width="99dp"
+                    android:layout_height="44dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="294dp"
+                    android:layout_marginTop="68dp"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginBottom="38dp"
+                    android:background="@drawable/ripple"
+                    android:text="View Pdf"
+                    android:textAllCaps="false"
+                    android:textColor="#1731C3"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

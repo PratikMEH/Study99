@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:paddingBottom="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/round2">
+                <Button
+                    android:id="@+id/unvst1"
+                    android:layout_width="99dp"
+                    android:layout_height="44dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="294dp"
+                    android:layout_marginTop="78dp"
+                    android:layout_marginEnd="18dp"
+                    android:background="@drawable/ripple"
+                    android:text="View Pdf"
+                    android:textAllCaps="false"
+                    android:textColor="#1731C3"/>
+
+
+
+                <TextView
+                    android:id="@+id/tt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="VSSUT"
+                    android:textColor="#000104"
+                    android:textSize="25dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tt1"
+                    android:paddingStart="15dp"
+                    android:text="Veer Surendra Sai University Of Technology, Burla \nSAMBALPUR, \nODISHA, \nINDIA – 768018 "
+                    android:textSize="15dp"
+                    android:textAllCaps="true">
+
+                </TextView>
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
