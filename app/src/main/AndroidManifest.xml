@@ -20,9 +20,11 @@
             android:name=".Prfl"
             android:theme="@style/AppTheme_noActionbar" />
         <activity android:name=".Recommendation" />
-        <activity android:name=".Bookmarks" />
+        <activity android:name=".Bookmarks"
+            android:theme="@style/AppTheme_noActionbar"/>
         <activity android:name=".Activities" />
-        <activity android:name=".Books" />
+        <activity android:name=".Books"
+            android:theme="@style/AppTheme_noActionbar"/>
         <activity android:name=".Topics" />
         <activity android:name=".Forget" />
         <activity android:name=".SignUp" />

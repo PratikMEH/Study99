@@ -10,15 +10,12 @@
     <include
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        layout="@layout/content_main"/>
-    <com.google.android.material.navigation.NavigationView
+        layout="@layout/drawer_toolbar"/>
+    <include
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/navigation_view"
-        app:menu="@menu/drawer_menu"
-        app:headerLayout="@layout/drawer_header"
-        android:layout_gravity="start"
-        android:fitsSystemWindows="true"/>
+        android:layout_height="wrap_content"
+        layout="@layout/content_main"/>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -28,7 +25,7 @@
         android:orientation="vertical">
     <RelativeLayout
         android:background="@drawable/ripple"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="57dp"
         android:layout_width="match_parent"
         android:layout_height="150dp">
         <ImageView
@@ -316,4 +313,12 @@
 
     </LinearLayout>
     </ScrollView>
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/navigation_view"
+        app:menu="@menu/drawer_menu"
+        app:headerLayout="@layout/drawer_header"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"/>
 </androidx.drawerlayout.widget.DrawerLayout>
