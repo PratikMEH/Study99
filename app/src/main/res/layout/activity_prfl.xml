@@ -18,218 +18,183 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <ImageView
-            android:id="@+id/dsh_image"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="match_parent"
+            android:background="#D5D7E1"
             android:layout_marginTop="57dp"
-            android:background="@drawable/cover" />
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/crc"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="80dp"
-
-            android:src="@drawable/crcl_image"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:layout_below="@id/dsh_image"
-            android:background="#000000"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_below="@id/address"
-            android:background="#000000"
-            android:layout_marginTop="10dp"/>
-
-        <TextView
-            android:id="@+id/prf_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Profile Name"
-            android:textColor="#000000"
-            android:textStyle="bold"
-            android:textSize="18sp"
-            android:layout_below="@id/crc"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="5dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="profile_name@gmail.com"
-            android:layout_below="@id/prf_name"
-            android:layout_centerHorizontal="true"/>
-        <TextView
-            android:id="@+id/college"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="College :"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            android:layout_below="@id/dsh_image"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="10dp"/>
-      <TextView
-          android:id="@+id/address"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_below="@id/college"
-          android:text="Addresss :"
-          android:textStyle="bold"
-          android:textSize="20dp"
-          android:layout_marginLeft="10dp"
-          android:layout_marginTop="10dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/dsh_image"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="28dp"
-            android:layout_toRightOf="@id/college"
-            android:text="Your College Name" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/college"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="17dp"
-            android:layout_toRightOf="@id/address"
-            android:text="Your Address" />
-
-        <TextView
-            android:id="@+id/topic"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Topics :"
-            android:layout_below="@id/address"
-            android:layout_marginTop="20dp"
-            android:textSize="25dp"
-            android:layout_marginLeft="10dp"
-            android:textStyle="bold"
-            android:textColor="#000000"/>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/card1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/topic"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:backgroundTint="#7B8CEF"
-            android:layout_marginTop="10dp">
-
+            android:orientation="vertical">
             <LinearLayout
-                android:background="@drawable/round2"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="8dp">
-
-                <TextView
-                    android:id="@+id/txtName"
+                android:gravity="center"
+                android:background="@color/Blue"
+                android:orientation="vertical">
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="1dp"
-                    android:textColor="#000000"
-                    android:textStyle="bold"
-                    android:text="Introduction"
-                    android:layout_marginStart="5dp"
-                    android:textSize="18sp" />
+                    android:orientation="vertical"
+                    android:background="@drawable/first_layer"
+                    android:gravity="center">
 
-                <TextView
-                    android:id="@+id/txtDistance"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="1dp"
-                    android:text="Our Design Analysis And Algorithm Tutorial includes all topics of algorithm, asymptotic analysis, algorithm control structure, recurrence, master method,recursion tree method, simple sorting algorithm, bubble sort, selection sort, insertion sort, divide and conquer, binary search, merge sort, counting sort, lower bound theory etc."
-                    android:layout_marginStart="5dp"/>
-
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/crcl_image"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Profile Name"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:textSize="20dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:textColor="#fff"
+                        android:textStyle="normal"
+                        android:text="profile_name@gmail.com"
+                        android:paddingBottom="10dp"/>
+                </LinearLayout>
             </LinearLayout>
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
-            android:id="@+id/card2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/card1"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:backgroundTint="#7B8CEF"
-            android:layout_marginTop="10dp">
-
             <LinearLayout
-                android:background="@drawable/round2"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="8dp">
+                android:background="@drawable/second_layer"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp">
 
-                <TextView
-                    android:id="@+id/txtName2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="1dp"
-                    android:textColor="#000000"
-                    android:textStyle="bold"
-                    android:text="Recurrence Relations"
-                    android:layout_marginStart="5dp"
-                    android:textSize="18sp" />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
 
-                <TextView
-                    android:id="@+id/txtDistance2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="1dp"
-                    android:text="A recurrence is an equation or inequality that describes a function in terms of its values on smaller inputs. To solve a Recurrence Relation means to obtain a function defined on the natural numbers that satisfy the recurrence."
-                    android:layout_marginStart="5dp"/>
+                    <TextView
+                        android:id="@+id/ttv"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/martel"
+                        android:text="Total Topics Viewed"
+                        android:textColor="#fff"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
 
+                    <ImageView
+                        android:id="@+id/vw"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_below="@id/ttv"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/views" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ttv"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_toRightOf="@id/vw"
+                        android:fontFamily="@font/martel_extralight"
+                        android:text="25 Viwed"
+                        android:textColor="#fff"
+                        android:textSize="20dp" />
+
+                </RelativeLayout>
             </LinearLayout>
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/card2"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:backgroundTint="#7B8CEF"
-            android:layout_marginTop="10dp">
 
-            <LinearLayout
-                android:background="@drawable/round2"
-                android:layout_width="wrap_content"
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="8dp">
-
+                android:layout_marginTop="20dp">
                 <TextView
-                    android:id="@+id/txtName3"
-                    android:layout_width="match_parent"
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="1dp"
-                    android:textColor="#000000"
-                    android:textStyle="bold"
-                    android:text="Shorting"
-                    android:layout_marginStart="5dp"
-                    android:textSize="18sp" />
-
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"
+                    android:text="Name :"
+                    android:layout_marginLeft="10dp"/>
                 <TextView
-                    android:id="@+id/txtDistance3"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="1dp"
-                    android:text="Sorting refers to arranging data in a particular format. Sorting algorithm specifies the way to arrange data in a particular order. Most common orders are in numerical or lexicographical order."
-                    android:layout_marginStart="5dp"/>
-
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-    </RelativeLayout>
+                    android:layout_toRightOf="@id/name"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Pratik Chakraboty"
+                    android:textColor="#000"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/name"
+                    android:text="Addresss :"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/address"
+                    android:layout_below="@id/name"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="B.F.B Colony Mugma, Dhanbad"
+                    android:textColor="#000"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:id="@+id/branch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/address"
+                    android:text="Branch :"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/branch"
+                    android:layout_below="@id/address"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Computer Science"
+                    android:textColor="#000"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/branch"
+                    android:text="College :"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/branch"
+                    android:layout_below="@id/branch"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="K K College Of Engineering And Management"
+                    android:textColor="#000"
+                    android:textSize="15sp"/>
+            </RelativeLayout>
+        </LinearLayout>
     </ScrollView>
 
 
@@ -240,6 +205,8 @@
         android:id="@+id/navigation_view"
         app:menu="@menu/drawer_menu"
         app:headerLayout="@layout/drawer_header"
+        app:itemIconTint="@drawable/drawer_item_color"
+        app:itemTextColor="@drawable/drawer_item_color"
         android:layout_gravity="start"
         android:fitsSystemWindows="true" />
 

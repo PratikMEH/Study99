@@ -5,19 +5,52 @@
         <item android:id="@+id/drwProfile"
             android:icon="@drawable/prf"
             android:title="Profile"/>
+        <item android:id="@+id/drwTopics"
+            android:icon="@drawable/content"
+            android:title="Topics"/>
         <item android:id="@+id/drwBooks"
             android:icon="@drawable/books"
             android:title="Books"/>
         <item android:id="@+id/drwBookmarks"
             android:icon="@drawable/bkmrk"
             android:title="Bookmarks"/>
+        <item android:id="@+id/drwActivities"
+            android:icon="@drawable/meeting"
+            android:title="Activities"/>
         <item android:id="@+id/drwRecommendation"
             android:icon="@drawable/rcmnd"
             android:title="Recommendation"/>
     </group>
     <group>
+        <item android:title="Social">
+            <menu>
+                <item android:id="@+id/drwFacebook"
+                    android:title="Facebook"
+                    android:icon="@drawable/facebook"/>
+                <item android:id="@+id/drwGoogle"
+                    android:title="Google"
+                    android:icon="@drawable/google_plus"/>
+                <item android:id="@+id/drwTwitter"
+                    android:title="Twitter"
+                    android:icon="@drawable/twitter"/>
+                <item android:id="@+id/drwYoutube"
+                    android:title="Youtube"
+                    android:icon="@drawable/youtube"/>
+                <item android:id="@+id/drwGithub"
+                    android:title="Github"
+                    android:icon="@drawable/github"/>
+            </menu>
+        </item>
+
+
+    </group>
+
+    <group>
     <item android:title="Profile">
         <menu>
+            <item android:id="@+id/drwSettings"
+                android:icon="@drawable/setting"
+                android:title="Settings"/>
         <item android:id="@+id/drwLogout"
             android:icon="@drawable/logout"
             android:title="Logout"/>

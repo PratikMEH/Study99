@@ -9,12 +9,15 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.IInterface;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.Switch;
 import android.widget.Toast;
@@ -23,6 +26,7 @@ import com.google.android.material.navigation.NavigationView;
 
 public class Prfl extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
     DrawerLayout drawerLayout;
+    LinearLayout Introduction;
     ActionBarDrawerToggle actionBarDrawerToggle;
     Toolbar toolbar1;
     NavigationView navigationView;
@@ -36,13 +40,13 @@ public class Prfl extends AppCompatActivity implements NavigationView.OnNavigati
         toolbar1=(Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar1);
         getSupportActionBar().setTitle("Profile");
+        getSupportActionBar().show();
         navigationView=findViewById(R.id.navigation_view);
-        actionBarDrawerToggle= new ActionBarDrawerToggle(this,drawerLayout,toolbar1,(R.string.open),(R.string.close));
+        actionBarDrawerToggle= new ActionBarDrawerToggle(this,drawerLayout,toolbar1,(R.string.navigation_drawer_open),(R.string.navigation_drawer_close));
         drawerLayout.addDrawerListener(actionBarDrawerToggle);
         actionBarDrawerToggle.setDrawerIndicatorEnabled(true);
         actionBarDrawerToggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
-
     }
 
 
@@ -60,6 +64,11 @@ public class Prfl extends AppCompatActivity implements NavigationView.OnNavigati
         int id=menuItem.getItemId();
         switch (id)
         {
+            case R.id.drwTopics:
+                Intent intent4=new Intent(Prfl.this,Topics.class);
+                startActivity(intent4);
+                finish();
+                break;
             case R.id.drwBooks:
                 Intent intent= new Intent(Prfl.this,Books.class);
                 startActivity(intent);
@@ -70,9 +79,44 @@ public class Prfl extends AppCompatActivity implements NavigationView.OnNavigati
                 startActivity(intent1);
                 finish();
                 break;
+            case R.id.drwActivities:
+                Intent intent5=new Intent(Prfl.this,Activities.class);
+                startActivity(intent5);
+                finish();
+                break;
             case R.id.drwRecommendation:
                 Intent intent2=  new Intent(Prfl.this,Recommendation.class);
                 startActivity(intent2);
+                finish();
+                break;
+            case R.id.drwFacebook:
+                Intent intent6=new Intent(android.content.Intent.ACTION_VIEW);
+                intent6.setData(Uri.parse("https://www.facebook.com/"));
+                startActivity(intent6);
+                break;
+            case R.id.drwGoogle:
+                Intent intent7= new Intent(Intent.ACTION_VIEW);
+                intent7.setData(Uri.parse("https://mail.google.com/mail/u/0/#inbox"));
+                startActivity(intent7);
+                break;
+            case R.id.drwTwitter:
+                Intent intent8= new Intent(Intent.ACTION_VIEW);
+                intent8.setData(Uri.parse("https://twitter.com/login?lang=en"));
+                startActivity(intent8);
+                break;
+            case R.id.drwYoutube:
+                Intent intent9= new Intent(Intent.ACTION_VIEW);
+                intent9.setData(Uri.parse("https://www.youtube.com"));
+                startActivity(intent9);
+                break;
+            case R.id.drwGithub:
+                Intent intent10= new Intent(Intent.ACTION_VIEW);
+                intent10.setData(Uri.parse("https://github.com"));
+                startActivity(intent10);
+                break;
+            case R.id.drwSettings:
+                Intent intent11 = new Intent(Prfl.this,Settings.class);
+                startActivity(intent11);
                 finish();
                 break;
             case R.id.drwLogout:

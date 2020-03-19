@@ -318,6 +318,8 @@
         android:layout_height="match_parent"
         android:id="@+id/navigation_view"
         app:menu="@menu/drawer_menu"
+        app:itemIconTint="@drawable/drawer_item_color"
+        app:itemTextColor="@drawable/drawer_item_color"
         app:headerLayout="@layout/drawer_header"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"/>
