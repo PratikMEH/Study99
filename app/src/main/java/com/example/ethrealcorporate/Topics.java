@@ -53,6 +53,7 @@ public class Topics extends AppCompatActivity implements NavigationView.OnNaviga
         actionBarDrawerToggle2= new ActionBarDrawerToggle(this,drawerLayout,toolbar2,(R.string.open),(R.string.close));
         drawerLayout.addDrawerListener(actionBarDrawerToggle2);
         actionBarDrawerToggle2.setDrawerIndicatorEnabled(true);
+        actionBarDrawerToggle2.getDrawerArrowDrawable().setColor(getResources().getColor(R.color.white));
         actionBarDrawerToggle2.syncState();
         navigationView2.setNavigationItemSelectedListener(this);
 
@@ -85,13 +86,19 @@ public class Topics extends AppCompatActivity implements NavigationView.OnNaviga
                 });
                 AlertDialog alert= builder.create();
                 alert.show();
-                alert.show();
+
             }
         });
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 builder.setTitle("Add Bookmark?");
+                builder.setMessage("Wish to add this topic into Bookmark ?").setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                });
                 builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -99,13 +106,6 @@ public class Topics extends AppCompatActivity implements NavigationView.OnNaviga
                     }
                 });
                 AlertDialog alert= builder.create();
-                alert.show();
-                builder.setMessage("Wish to add this topic into Bookmark ?").setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-
-                    }
-                });
                 alert.show();
             }
         });
@@ -113,6 +113,12 @@ public class Topics extends AppCompatActivity implements NavigationView.OnNaviga
             @Override
             public void onClick(View v) {
                 builder.setTitle("Add Bookmark?");
+                builder.setMessage("Wish to add this topic into Bookmark ?").setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                });
                 builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -120,13 +126,6 @@ public class Topics extends AppCompatActivity implements NavigationView.OnNaviga
                     }
                 });
                 AlertDialog alert= builder.create();
-                alert.show();
-                builder.setMessage("Wish to add this topic into Bookmark ?").setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-
-                    }
-                });
                 alert.show();
             }
         });
@@ -134,6 +133,12 @@ public class Topics extends AppCompatActivity implements NavigationView.OnNaviga
             @Override
             public void onClick(View v) {
                 builder.setTitle("Add Bookmark?");
+                builder.setMessage("Wish to add this topic into Bookmark ?").setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                });
                 builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -141,13 +146,6 @@ public class Topics extends AppCompatActivity implements NavigationView.OnNaviga
                     }
                 });
                 AlertDialog alert= builder.create();
-                alert.show();
-                builder.setMessage("Wish to add this topic into Bookmark ?").setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-
-                    }
-                });
                 alert.show();
             }
         });
@@ -156,6 +154,7 @@ public class Topics extends AppCompatActivity implements NavigationView.OnNaviga
 
 
     }
+
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {

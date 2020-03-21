@@ -6,4 +6,5 @@
     <color name="MyColor1">#00FF80</color>
     <color name="MyColor2">#33FF99</color>
     <color name="Blue">#1731C3</color>
+    <color name="white">#fff</color>
 </resources>

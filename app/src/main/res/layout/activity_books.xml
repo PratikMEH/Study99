@@ -20,12 +20,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     <LinearLayout
+        android:layout_marginTop="57dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#fff"
         android:orientation="vertical">
     <RelativeLayout
         android:background="@drawable/ripple"
-        android:layout_marginTop="57dp"
         android:layout_width="match_parent"
         android:layout_height="150dp">
         <ImageView
@@ -35,25 +36,30 @@
             android:src="@drawable/daabk1"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="10dp"/>
+
         <TextView
             android:id="@+id/ttl1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:layout_toRightOf="@id/i1"
+            android:fontFamily="@font/varela_round"
             android:text="Design And Analysis Of Algorithm"
-            android:layout_marginLeft="10dp"
-            android:textSize="20dp"
             android:textColor="#070000"
-            android:textStyle="bold"/>
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
         <TextView
             android:id="@+id/sttl1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/i1"
+            android:layout_below="@id/ttl1"
             android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/i1"
+            android:fontFamily="@font/libre_franklin_bold"
             android:text="by S. Sridhar"
-            android:layout_below="@id/ttl1"/>
+            android:textSize="11sp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -92,9 +98,11 @@
             android:layout_marginEnd="18dp"
             android:layout_marginBottom="38dp"
             android:background="@drawable/ripple"
+            android:fontFamily="@font/libre_franklin_extrabold"
             android:text="Buy Now"
+            android:textSize="14sp"
             android:textAllCaps="false"
-            android:textColor="#1731C3"/>
+            android:textColor="#1731C3" />
     </RelativeLayout>
     <RelativeLayout
         android:layout_marginTop="10dp"
@@ -107,25 +115,30 @@
             android:src="@drawable/daabk2"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="10dp"/>
+
         <TextView
             android:id="@+id/ttl2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:layout_toRightOf="@id/i2"
+            android:fontFamily="@font/varela_round"
             android:text="Design Analysis And Algorithm"
-            android:layout_marginLeft="10dp"
-            android:textSize="20dp"
             android:textColor="#070000"
-            android:textStyle="bold"/>
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
         <TextView
             android:id="@+id/sttl2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/i2"
+            android:layout_below="@id/ttl2"
             android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/i2"
+            android:fontFamily="@font/libre_franklin_bold"
             android:text="by Hari Mohan pandey"
-            android:layout_below="@id/ttl2"/>
+            android:textSize="11sp" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -164,9 +177,11 @@
             android:layout_marginEnd="18dp"
             android:layout_marginBottom="38dp"
             android:background="@drawable/ripple"
+            android:fontFamily="@font/libre_franklin_extrabold"
             android:text="Buy Now"
+            android:textSize="14sp"
             android:textAllCaps="false"
-            android:textColor="#1731C3"/>
+            android:textColor="#1731C3" />
     </RelativeLayout>
     <RelativeLayout
         android:layout_marginTop="10dp"
@@ -179,25 +194,30 @@
             android:src="@drawable/daabk3"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="10dp"/>
+
         <TextView
             android:id="@+id/ttl3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:layout_toRightOf="@id/i3"
+            android:fontFamily="@font/varela_round"
             android:text="Design Methods And Analysis Of Algorithm"
-            android:layout_marginLeft="10dp"
-            android:textSize="20dp"
             android:textColor="#070000"
-            android:textStyle="bold"/>
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
         <TextView
             android:id="@+id/sttl3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/i3"
+            android:layout_below="@id/ttl3"
             android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/i3"
+            android:fontFamily="@font/libre_franklin_bold"
             android:text="by S K Basu"
-            android:layout_below="@id/ttl3"/>
+            android:textSize="11sp" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -235,9 +255,11 @@
             android:layout_marginEnd="18dp"
             android:layout_marginBottom="38dp"
             android:background="@drawable/ripple"
+            android:fontFamily="@font/libre_franklin_extrabold"
             android:text="Buy Now"
+            android:textSize="14sp"
             android:textAllCaps="false"
-            android:textColor="#1731C3"/>
+            android:textColor="#1731C3" />
     </RelativeLayout>
     <RelativeLayout
         android:layout_marginTop="10dp"
@@ -250,25 +272,30 @@
             android:src="@drawable/daabk4"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="10dp"/>
+
         <TextView
             android:id="@+id/ttl4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:layout_toRightOf="@id/i4"
-            android:text="Data Structur And Algorithm"
-            android:layout_marginLeft="10dp"
-            android:textSize="20dp"
+            android:fontFamily="@font/varela_round"
+            android:text="Data Structur And Algorithm in Python"
             android:textColor="#070000"
-            android:textStyle="bold"/>
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
         <TextView
             android:id="@+id/sttl4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/i4"
+            android:layout_below="@id/ttl4"
             android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/i4"
+            android:fontFamily="@font/libre_franklin_bold"
             android:text="by Michael"
-            android:layout_below="@id/ttl4"/>
+            android:textSize="11sp" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -306,9 +333,11 @@
             android:layout_marginEnd="18dp"
             android:layout_marginBottom="38dp"
             android:background="@drawable/ripple"
+            android:fontFamily="@font/libre_franklin_extrabold"
             android:text="Buy Now"
+            android:textSize="14sp"
             android:textAllCaps="false"
-            android:textColor="#1731C3"/>
+            android:textColor="#1731C3" />
     </RelativeLayout>
 
     </LinearLayout>

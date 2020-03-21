@@ -15,14 +15,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         layout="@layout/content_main"/>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#D5D7E1"
             android:layout_marginTop="57dp"
+            android:background="#C7C9D6"
+
             android:orientation="vertical">
             <LinearLayout
                 android:layout_width="match_parent"
@@ -38,26 +41,30 @@
                     android:gravity="center">
 
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:layout_width="120dp"
-                        android:layout_height="120dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="10dp"
                         android:src="@drawable/crcl_image"/>
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Profile Name"
-                        android:textStyle="bold"
-                        android:textColor="#fff"
-                        android:textSize="20dp"/>
+                        android:fontFamily="@font/work_sans_bold"
+                        android:text="Pratik Chakraborty"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/work_sans"
+                        android:paddingBottom="10dp"
+                        android:text="pratikch00947@gmail.com"
+                        android:textColor="#000"
                         android:textSize="15dp"
-                        android:textColor="#fff"
-                        android:textStyle="normal"
-                        android:text="profile_name@gmail.com"
-                        android:paddingBottom="10dp"/>
+                        android:textStyle="normal" />
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -71,26 +78,26 @@
                 android:paddingBottom="20dp">
 
                 <RelativeLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="160dp"
                     android:layout_height="wrap_content">
 
                     <TextView
                         android:id="@+id/ttv"
                         android:layout_width="250dp"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/martel"
+                        android:fontFamily="@font/work_sans_bold"
                         android:text="Total Topics Viewed"
                         android:textColor="#fff"
-                        android:textSize="20dp"
+                        android:textSize="15dp"
                         android:textStyle="bold" />
 
                     <ImageView
                         android:id="@+id/vw"
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
                         android:layout_below="@id/ttv"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginTop="15dp"
+                        android:layout_marginTop="10dp"
                         android:layout_marginBottom="10dp"
                         android:src="@drawable/views" />
 
@@ -102,98 +109,199 @@
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="10dp"
                         android:layout_toRightOf="@id/vw"
-                        android:fontFamily="@font/martel_extralight"
-                        android:text="25 Viwed"
+                        android:fontFamily="@font/work_sans"
+                        android:text="25 Viewed"
                         android:textColor="#fff"
-                        android:textSize="20dp" />
+                        android:textSize="14dp"
+                        android:textStyle="normal" />
 
                 </RelativeLayout>
             </LinearLayout>
 
 
 
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp">
+                android:paddingTop="20dp">
+
                 <TextView
-                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_above="@id/h1"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="2dp"
+                    android:background="#000" />
+
+                <TextView
+                    android:id="@+id/h1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#000"
-                    android:textSize="15sp"
-                    android:layout_marginTop="10dp"
-                    android:text="Name :"
-                    android:layout_marginLeft="10dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/name"
-                    android:layout_marginTop="10dp"
+                    android:layout_alignParentTop="true"
                     android:layout_marginLeft="10dp"
-                    android:text="Pratik Chakraboty"
-                    android:textColor="#000"
-                    android:textSize="15sp"/>
-                <TextView
-                    android:id="@+id/address"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#000"
-                    android:textSize="15sp"
                     android:layout_marginTop="10dp"
-                    android:layout_below="@id/name"
-                    android:text="Addresss :"
-                    android:layout_marginLeft="10dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/address"
-                    android:layout_below="@id/name"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="10dp"
-                    android:text="B.F.B Colony Mugma, Dhanbad"
+                    android:fontFamily="@font/work_sans_bold"
+                    android:text="Topics :"
                     android:textColor="#000"
-                    android:textSize="15sp"/>
-                <TextView
-                    android:id="@+id/branch"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#000"
-                    android:textSize="15sp"
-                    android:layout_marginTop="10dp"
-                    android:layout_below="@id/address"
-                    android:text="Branch :"
-                    android:layout_marginLeft="10dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/branch"
-                    android:layout_below="@id/address"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="10dp"
-                    android:text="Computer Science"
-                    android:textColor="#000"
-                    android:textSize="15sp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#000"
-                    android:textSize="15sp"
-                    android:layout_marginTop="10dp"
-                    android:layout_below="@id/branch"
-                    android:text="College :"
-                    android:layout_marginLeft="10dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/branch"
-                    android:layout_below="@id/branch"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="10dp"
-                    android:text="K K College Of Engineering And Management"
-                    android:textColor="#000"
-                    android:textSize="15sp"/>
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
             </RelativeLayout>
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="20dp"
+                android:orientation="horizontal">
+
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        <RelativeLayout
+                            android:layout_width="170dp"
+                            android:layout_height="170dp"
+                            android:gravity="center"
+                            android:background="#832751">
+
+                            <ImageView
+                                android:id="@+id/imgg"
+                                android:layout_width="match_parent"
+                                android:layout_height="130dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/daa"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/imgg"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                android:fontFamily="@font/work_sans_bold"
+                                android:singleLine="true"
+                                android:text="Design Analysis And Algorithm"
+                                android:textSize="13sp"
+                                android:textColor="#fff"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:gravity="center"
+                        android:background="#832751">
+
+                        <ImageView
+                            android:id="@+id/imgg2"
+                            android:layout_width="match_parent"
+                            android:layout_height="130dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/daa2" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/imgg2"
+                            android:layout_marginLeft="10dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/work_sans_bold"
+                            android:singleLine="true"
+                            android:text="Asymptotic Analysis"
+                            android:textColor="#fff"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp">
+                    <RelativeLayout
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:gravity="center"
+                        android:background="#832751">
+
+                        <ImageView
+                            android:id="@+id/imgg3"
+                            android:layout_width="match_parent"
+                            android:layout_height="130dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/daa3" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/imgg3"
+                            android:layout_marginLeft="10dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/work_sans_bold"
+                            android:singleLine="true"
+                            android:textColor="#fff"
+                            android:text="Recurrence Relations"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+                </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#000">
+
+                </LinearLayout>
+            </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 

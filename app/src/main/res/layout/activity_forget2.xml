@@ -39,7 +39,7 @@
         android:id="@+id/eet"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:background="@drawable/round"
+        android:background="@drawable/round2"
         android:alpha="0.5"
         android:layout_below="@+id/tv2"
         android:layout_marginTop="20dp"

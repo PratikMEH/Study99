@@ -33,6 +33,7 @@ public class Bookmarks extends AppCompatActivity implements NavigationView.OnNav
         navigationView1=findViewById(R.id.navigation_view);
         actionBarDrawerToggle1= new ActionBarDrawerToggle(this,drawerLayout,toolbar, R.string.open, R.string.close);
         drawerLayout.addDrawerListener(actionBarDrawerToggle1);
+        actionBarDrawerToggle1.getDrawerArrowDrawable().setColor(getResources().getColor(R.color.white));
         actionBarDrawerToggle1.setDrawerIndicatorEnabled(true);
         actionBarDrawerToggle1.syncState();
         navigationView1.setNavigationItemSelectedListener(this);

@@ -4,5 +4,6 @@
         <item>@font/martel_extralight</item>
         <item>@font/rubik_bold</item>
         <item>@font/rubik_light</item>
+        <item>@font/rubik_medium</item>
     </array>
 </resources>

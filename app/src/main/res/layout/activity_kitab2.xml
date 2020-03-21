@@ -24,13 +24,14 @@
                 android:id="@+id/ttl1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/ii1"
-                android:text="Design Analysis And Algorithm"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
-                android:textStyle="bold"
+                android:layout_toRightOf="@id/ii1"
+                android:fontFamily="@font/varela_round"
+                android:text="Design Analysis And Algorithm"
                 android:textColor="#090000"
-                android:textSize="20dp"/>
+                android:textSize="16sp"
+                android:textStyle="bold" />
             <RatingBar
                 android:id="@+id/rate1"
                 android:layout_width="wrap_content"
@@ -53,14 +54,15 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginEnd="10dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="148dp"
-                android:text="Description"
-                android:textSize="20dp"
-                android:textStyle="bold"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/roboto"
                 android:paddingStart="10dp"
-                android:textColor="#090000"/>
+                android:text="Description"
+                android:textColor="#090000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView3"
@@ -72,8 +74,10 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="180dp"
                 android:layout_marginEnd="-1dp"
+                android:fontFamily="@font/work_sans"
                 android:paddingStart="10dp"
-                android:text="Design and Analysis of Algorithms is designed to serve as a textbook for the undergraduate students of computer science engineering and information technology as well as postgraduate students of computer applications. The book aims to empower students with in-depth knowledge of the fundamental concepts and the design, analysis, and implementation aspects of algorithms." />
+                android:text="Design and Analysis of Algorithms is designed to serve as a textbook for the undergraduate students of computer science engineering and information technology as well as postgraduate students of computer applications. The book aims to empower students with in-depth knowledge of the fundamental concepts and the design, analysis, and implementation aspects of algorithms."
+                android:textSize="14sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -84,10 +88,11 @@
                 android:layout_marginStart="11dp"
                 android:layout_marginTop="324dp"
                 android:layout_marginEnd="8dp"
+                android:fontFamily="@font/roboto"
                 android:paddingStart="10dp"
                 android:text="About The Author"
                 android:textColor="#090000"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -100,23 +105,26 @@
                 android:layout_marginStart="11dp"
                 android:layout_marginTop="354dp"
                 android:layout_marginEnd="0dp"
+                android:fontFamily="@font/work_sans"
                 android:paddingStart="10dp"
-                android:text="Hari Mohan Pandey is a faculty at Edge Hill University, UK. He is specialized in computer science and engineering. His research area includes artificial intelligence, soft computing techniques, natural language processing and machine learning algorithms. He is author of various books in computer science engineering. He has published over 50 research papers in reputed journals and Conferences. He served as editor-in-chief, session chair, served as leading guest editor for the International Journals and delivered keynotes. He has been given the prestigious award “The Global Award for the Best Computer Science Faculty of the Year 2015”, award for completing INDO-US project GENTLE, award (Certificate of Exceptionalism) from the Prime Minister of India and award for developing innovative teaching and learning models" />
+                android:text="Hari Mohan Pandey is a faculty at Edge Hill University, UK. He is specialized in computer science and engineering. His research area includes artificial intelligence, soft computing techniques, natural language processing and machine learning algorithms. He is author of various books in computer science engineering. He has published over 50 research papers in reputed journals and Conferences. He served as editor-in-chief, session chair, served as leading guest editor for the International Journals and delivered keynotes. He has been given the prestigious award “The Global Award for the Best Computer Science Faculty of the Year 2015”, award for completing INDO-US project GENTLE, award (Certificate of Exceptionalism) from the Prime Minister of India and award for developing innovative teaching and learning models"
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/btb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@id/ata"
                 android:layout_alignParentStart="true"
-                android:layout_marginTop="15dp"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="12dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginEnd="7dp"
+                android:fontFamily="@font/roboto"
                 android:paddingStart="10dp"
-                android:layout_below="@id/ata"
                 android:text="Buy This Book"
                 android:textColor="#090000"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -155,18 +163,21 @@
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="95dp"
                 android:layout_marginTop="29dp"
+                android:fontFamily="@font/varela_round"
                 android:text="Amazon"
                 android:textColor="#0C0000"
-                android:textSize="20dp"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@id/flp"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="94dp"
-                android:layout_below="@id/flp"
-                android:text="Rs. 460" />
+                android:fontFamily="@font/libre_franklin_bold"
+                android:text="Rs. 460"
+                android:textSize="11sp" />
 
             <Button
                 android:id="@+id/buy21"
@@ -177,9 +188,10 @@
                 android:layout_marginStart="304dp"
                 android:layout_marginTop="14dp"
                 android:background="#ED7309"
+                android:fontFamily="@font/rubik_medium"
                 android:text="Buy Now "
                 android:textColor="#fff"
-                android:textSize="10dp" />
+                android:textSize="14sp" />
 
             <ImageView
                 android:layout_width="40dp"
@@ -193,22 +205,25 @@
                 android:id="@+id/flp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@id/btb"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="95dp"
-                android:layout_below="@id/btb"
                 android:layout_marginTop="10dp"
+                android:fontFamily="@font/varela_round"
                 android:text="Flipkart"
-                android:textStyle="bold"
                 android:textColor="#0C0000"
-                android:textSize="20dp" />
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@id/amz"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="95dp"
-                android:layout_below="@id/amz"
-                android:text="Rs. 460" />
+                android:fontFamily="@font/libre_franklin_bold"
+                android:text="Rs. 460"
+                android:textSize="11sp" />
 
             <Button
                 android:id="@+id/buy22"
@@ -219,9 +234,10 @@
                 android:layout_marginStart="305dp"
                 android:layout_marginTop="20dp"
                 android:background="#ED7309"
+                android:fontFamily="@font/rubik_medium"
                 android:text="Buy Now "
                 android:textColor="#fff"
-                android:textSize="10dp" />
+                android:textSize="14sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -229,7 +245,9 @@
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="93dp"
                 android:layout_marginTop="70dp"
-                android:text="Author: Hari Mohan Pandey" />
+                android:fontFamily="@font/libre_franklin_bold"
+                android:text="Author: Hari Mohan Pandey"
+                android:textSize="11sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -237,14 +255,19 @@
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="92dp"
                 android:layout_marginTop="95dp"
-                android:text="Language: English" />
+                android:fontFamily="@font/libre_franklin_bold"
+                android:text="Language: English"
+                android:textSize="11sp" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="92dp"
                 android:layout_marginTop="120dp"
-                android:text="Paper Back: 560" />
+                android:fontFamily="@font/libre_franklin_bold"
+                android:text="Paper Back: 560"
+                android:textSize="11sp" />
 
         </RelativeLayout>
     </ScrollView>

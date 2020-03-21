@@ -9,7 +9,7 @@
 </style>
     <style name="AppTheme_noActionbar" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">#AF1717</item>
+        <item name="colorPrimary">#1731C3</item>
         <item name="colorPrimaryDark">#1731C3</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>

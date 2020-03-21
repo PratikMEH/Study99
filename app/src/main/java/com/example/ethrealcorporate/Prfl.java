@@ -5,6 +5,7 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.cardview.widget.CardView;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
@@ -25,6 +26,7 @@ import android.widget.Toast;
 import com.google.android.material.navigation.NavigationView;
 
 public class Prfl extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
+    CardView cardView1,cardView2,cardView3;
     DrawerLayout drawerLayout;
     LinearLayout Introduction;
     ActionBarDrawerToggle actionBarDrawerToggle;
@@ -42,11 +44,18 @@ public class Prfl extends AppCompatActivity implements NavigationView.OnNavigati
         getSupportActionBar().setTitle("Profile");
         getSupportActionBar().show();
         navigationView=findViewById(R.id.navigation_view);
-        actionBarDrawerToggle= new ActionBarDrawerToggle(this,drawerLayout,toolbar1,(R.string.navigation_drawer_open),(R.string.navigation_drawer_close));
+        actionBarDrawerToggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar1,(R.string.navigation_drawer_open),(R.string.navigation_drawer_close));
         drawerLayout.addDrawerListener(actionBarDrawerToggle);
-        actionBarDrawerToggle.setDrawerIndicatorEnabled(true);
+        actionBarDrawerToggle.getDrawerArrowDrawable().setColor(getResources().getColor(R.color.white));
         actionBarDrawerToggle.syncState();
+        actionBarDrawerToggle.setDrawerIndicatorEnabled(true);
         navigationView.setNavigationItemSelectedListener(this);
+
+
+        cardView1= findViewById(R.id.card1);
+        cardView2= findViewById(R.id.card2);
+        cardView3= findViewById(R.id.card3);
+
     }
 
 
@@ -90,8 +99,8 @@ public class Prfl extends AppCompatActivity implements NavigationView.OnNavigati
                 finish();
                 break;
             case R.id.drwFacebook:
-                Intent intent6=new Intent(android.content.Intent.ACTION_VIEW);
-                intent6.setData(Uri.parse("https://www.facebook.com/"));
+                Intent intent6=new Intent(Intent.ACTION_VIEW);
+                intent6.setData(Uri.parse("https://m.facebook.com"));
                 startActivity(intent6);
                 break;
             case R.id.drwGoogle:
@@ -121,6 +130,8 @@ public class Prfl extends AppCompatActivity implements NavigationView.OnNavigati
                 break;
             case R.id.drwLogout:
                 Intent intent3=new Intent(Prfl.this,MainActivity.class);
+                startActivity(intent3);
+                intent3.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent3);
                 finish();
                 break;

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="475dp"
+    android:layout_gravity="center"
+    android:background="#E8EDFA">
+    <TextView
+        android:id="@+id/id_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feedback "
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:paddingStart="5dp"
+        android:elevation="0dp"/>
+
+    <EditText
+        android:id="@+id/id_name"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/id_title"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toRightOf="@id/id_namet"
+        android:background="@drawable/box_type" />
+
+    <TextView
+        android:id="@+id/id_namet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:elevation="0dp"
+        android:paddingStart="5dp"
+        android:text="Name :"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/id_email"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/id_name"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toRightOf="@id/id_namet"
+        android:background="@drawable/box_type" />
+    <TextView
+        android:id="@+id/id_emailt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email :"
+        android:layout_below="@id/id_name"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:paddingStart="5dp"
+        android:elevation="0dp"/>
+
+    <EditText
+        android:id="@+id/id_phone"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/id_email"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toRightOf="@id/id_namet"
+        android:background="@drawable/box_type" />
+    <TextView
+        android:id="@+id/id_phonet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone :"
+        android:layout_below="@id/id_email"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:paddingStart="5dp"
+        android:elevation="0dp"/>
+
+    <EditText
+        android:id="@+id/edit_box"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/id_phone"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/box_type"
+        android:gravity="center"
+        android:hint="Write Your Review" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_below="@id/edit_box"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="#AAA7A7"/>
+    <TextView
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:textStyle="bold"
+        android:textColor="@color/Blue"
+        android:textSize="16sp"/>
+
+
+
+
+</RelativeLayout>

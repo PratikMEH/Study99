@@ -20,17 +20,18 @@
         android:layout_marginTop="25dp"
         android:src="@drawable/daabk1" />
 
-    <TextView
-        android:id="@+id/ttl1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/ii1"
-        android:text="Design And Analysis Of Algorithm"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:textStyle="bold"
-        android:textColor="#090000"
-        android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/ttl1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/ii1"
+            android:fontFamily="@font/varela_round"
+            android:text="Design And Analysis Of Algorithm"
+            android:textColor="#090000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
     <RatingBar
         android:id="@+id/rate1"
         android:layout_width="wrap_content"
@@ -47,20 +48,21 @@
         android:layout_marginTop="5dp"/>
 
         <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="148dp"
             android:layout_marginEnd="10dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="148dp"
-        android:text="Description"
-        android:textSize="20dp"
-        android:textStyle="bold"
+            android:fontFamily="@font/roboto"
             android:paddingStart="10dp"
-        android:textColor="#090000"/>
+            android:text="Description"
+            android:textColor="#090000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView3"
@@ -72,6 +74,8 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="180dp"
             android:layout_marginEnd="-1dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/work_sans"
             android:paddingStart="10dp"
             android:text="Design and Analysis of Algorithms is designed to serve as a textbook for the undergraduate students of computer science engineering and information technology as well as postgraduate students of computer applications. The book aims to empower students with in-depth knowledge of the fundamental concepts and the design, analysis, and implementation aspects of algorithms." />
 
@@ -84,10 +88,11 @@
             android:layout_marginStart="11dp"
             android:layout_marginTop="324dp"
             android:layout_marginEnd="8dp"
+            android:fontFamily="@font/roboto"
             android:paddingStart="10dp"
             android:text="About The Author"
             android:textColor="#090000"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
         <TextView
@@ -99,6 +104,8 @@
             android:layout_marginStart="11dp"
             android:layout_marginTop="354dp"
             android:layout_marginEnd="0dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/work_sans"
             android:paddingStart="10dp"
             android:text="S. Sridhar is Professor, Department of Information Science and Technology, College of Engineering Guindy Campus, Anna University, Chennai. He has more than 20 years of active teaching and research experience, including a brief stint at National Institute of Technology (NIT), Tiruchirappalli. A PhD from Anna University, he has specialized in medical imaging and has published several papers on the subject." />
 
@@ -112,10 +119,11 @@
             android:layout_marginStart="12dp"
             android:layout_marginTop="510dp"
             android:layout_marginEnd="7dp"
+            android:fontFamily="@font/roboto"
             android:paddingStart="10dp"
             android:text="Buy This Book"
             android:textColor="#090000"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
         <TextView
@@ -147,40 +155,45 @@
         android:layout_marginEnd="369dp"
         app:srcCompat="@drawable/flpkrt" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="95dp"
-        android:layout_marginTop="610dp"
-        android:text="Amazon"
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="610dp"
+            android:fontFamily="@font/varela_round"
 
-        android:textStyle="bold"
-        android:textColor="#0C0000"
-        android:textSize="20dp" />
+            android:text="Amazon"
+            android:textColor="#0C0000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="94dp"
-        android:layout_marginTop="580dp"
-        android:text="Rs. 571" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="94dp"
+            android:layout_marginTop="580dp"
+            android:fontFamily="@font/libre_franklin_bold"
+            android:text="Rs. 571"
+            android:textSize="11sp"/>
 
-    <Button
-        android:id="@+id/buy1"
-        android:layout_width="wrap_content"
-        android:layout_height="35dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="305dp"
-        android:layout_marginTop="555dp"
-        android:text="Buy Now "
-        android:textColor="#fff"
-        android:background="#ED7309"/>
+        <Button
+            android:id="@+id/buy1"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="305dp"
+            android:layout_marginTop="555dp"
+            android:background="#ED7309"
+            android:fontFamily="@font/rubik_medium"
+            android:text="Buy Now "
+            android:textSize="14sp"
+            android:textColor="#fff" />
 
     <ImageView
         android:layout_width="30dp"
@@ -191,38 +204,43 @@
         android:layout_marginEnd="369dp"
         app:srcCompat="@drawable/amz" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="95dp"
-        android:layout_marginTop="555dp"
-        android:text="Flipkart"
-        android:textStyle="bold"
-        android:textColor="#0C0000"
-        android:textSize="20dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="555dp"
+            android:fontFamily="@font/varela_round"
+            android:text="Flipkart"
+            android:textColor="#0C0000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="95dp"
-        android:layout_marginTop="635dp"
-        android:text="Rs. 470" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="635dp"
+            android:fontFamily="@font/libre_franklin_bold"
+            android:text="Rs. 470"
+            android:textSize="11sp"/>
 
-    <Button
-        android:id="@+id/buy2"
-        android:layout_width="wrap_content"
-        android:layout_height="35dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="305dp"
-        android:layout_marginTop="612dp"
-        android:background="#ED7309"
-        android:text="Buy Now "
-        android:textColor="#fff" />
+        <Button
+            android:id="@+id/buy2"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="305dp"
+            android:layout_marginTop="612dp"
+            android:background="#ED7309"
+            android:fontFamily="@font/rubik_medium"
+            android:text="Buy Now "
+            android:textSize="14sp"
+            android:textColor="#fff" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -230,6 +248,7 @@
             android:layout_alignParentStart="true"
             android:layout_marginStart="93dp"
             android:layout_marginTop="70dp"
+            android:fontFamily="@font/libre_franklin_bold"
             android:text="Author: S Sridhar" />
 
         <TextView
@@ -238,13 +257,16 @@
             android:layout_alignParentStart="true"
             android:layout_marginStart="92dp"
             android:layout_marginTop="95dp"
+            android:fontFamily="@font/libre_franklin_bold"
             android:text="Language: English" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_marginStart="92dp"
             android:layout_marginTop="120dp"
+            android:fontFamily="@font/libre_franklin_bold"
             android:text="Paper Back: 788" />
 
     </RelativeLayout>

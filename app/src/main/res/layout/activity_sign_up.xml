@@ -23,74 +23,83 @@
         android:layout_marginEnd="22dp"
         android:layout_marginBottom="77dp"
         android:background="#1731C3"
+        android:textAllCaps="true"
         android:text="Sign up"
         android:textSize="15dp"
         android:textColor="#fff" />
 
 
     <EditText
-        android:id="@+id/pass"
+        android:id="@+id/editText_password"
         android:layout_width="wrap_content"
-        android:layout_height="35dp"
+        android:layout_height="40dp"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-
         android:layout_marginStart="22dp"
-        android:layout_marginTop="335dp"
-        android:layout_marginEnd="24dp"
-        android:background="@drawable/round"
+        android:layout_marginEnd="22dp"
+        android:layout_below="@id/ed1"
         android:ems="10"
-        android:hint="Password"
+        android:background="@drawable/round2"
+        android:hint="Enter Your Password"
         android:inputType="textPassword"
-        android:paddingStart="10dp" />
+        android:paddingStart="10dp"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:background="#1731C3">
 
-        <LinearLayout
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/crc_img"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:layout_centerInParent="true"
-            android:background="#fff"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:src="@drawable/profile"/>
 
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="18dp"
-                android:src="@drawable/ic_account_circle_black_24dp"></ImageView>
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="55dp"
-                android:src="@drawable/edit"></ImageView>
-
-        </LinearLayout>
-
+        <ImageView
+            android:id="@+id/image_edit"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="149dp"
+            android:layout_marginBottom="56dp"
+            android:src="@drawable/edit" />
 
     </RelativeLayout>
 
     <EditText
-        android:id="@+id/et1"
+        android:id="@+id/editText_userName"
         android:layout_width="362dp"
-        android:layout_height="35dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="240dp"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="22dp"
-        android:layout_marginTop="235dp"
         android:layout_marginEnd="22dp"
         android:layout_marginBottom="13dp"
-        android:background="@drawable/round"
         android:ems="10"
-        android:hint="User Name"
+        android:background="@drawable/round2"
+        android:hint="Enter Your User Name"
         android:inputType="textEmailAddress"
-        android:paddingStart="10dp" />
+        android:paddingStart="10dp"/>
+
+
+    <EditText
+        android:id="@+id/ed1"
+        android:layout_width="362dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/editText_userName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="13dp"
+        android:ems="10"
+        android:background="@drawable/round2"
+        android:hint="Enter Your Email Address"
+        android:inputType="textEmailAddress"
+        android:paddingStart="10dp"/>
 
     <TextView
         android:id="@+id/create"
@@ -100,41 +109,23 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="27dp"
         android:layout_marginBottom="29dp"
-        android:text="Already have an account? Sign In"
+        android:text="Already having an account? sign In"
         android:layout_centerInParent="true"
         android:textAlignment="center"
         android:textStyle="bold"
         android:textColor="#ED595656"/>
 
+
     <CheckBox
         android:id="@+id/chk1"
-        android:layout_width="329dp"
-        android:layout_height="29dp"
-        android:layout_below="@+id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bt1"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
         android:layout_marginStart="22dp"
-        android:layout_marginTop="22dp"
-        android:layout_marginEnd="59dp"
-        android:layout_marginBottom="182dp"
+        android:layout_marginBottom="20dp"
         android:text="I read and agree to Tearms and Conditions" />
-
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="370dp"
-        android:layout_height="35dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="285dp"
-        android:layout_marginEnd="22dp"
-        android:background="@drawable/round"
-        android:ems="10"
-        android:hint="Email"
-        android:inputType="textEmailAddress"
-        android:paddingStart="10dp" />
 
 
 </RelativeLayout>

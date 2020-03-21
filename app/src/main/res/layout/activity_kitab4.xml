@@ -26,12 +26,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/ii1"
-                android:text="Data Structure And Algoithm In Python"
+                android:text="Data Structure And Algoithm In \nPython"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
                 android:textStyle="bold"
+                android:fontFamily="@font/varela_round"
                 android:textColor="#090000"
-                android:textSize="20dp"/>
+                android:textSize="16sp"/>
             <RatingBar
                 android:id="@+id/rate1"
                 android:layout_width="wrap_content"
@@ -58,7 +59,8 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="148dp"
                 android:text="Description"
-                android:textSize="20dp"
+                android:fontFamily="@font/roboto"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 android:paddingStart="10dp"
                 android:textColor="#090000"/>
@@ -73,6 +75,8 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="180dp"
                 android:layout_marginEnd="-1dp"
+                android:fontFamily="@font/work_sans"
+                android:textSize="14sp"
                 android:paddingStart="10dp"
                 android:text="This all-new Data Structures and Algorithms in Python is designed to provide an introduction to data structures and algorithms, including their design, analysis, and implementation. The authors take advantage of the beauty and simplicity of Python to present executable source code that is clear and concise. Furthermore, a consistent object-oriented viewpoint is retained throughout the book, including the use of inheritance, both to maximize code reuse and to draw attention to the clear similarities and differences of various abstract data types and algorithmic approaches." />
 
@@ -88,7 +92,8 @@
                 android:layout_below="@id/sdsc"
                 android:text="About The Author"
                 android:textColor="#090000"
-                android:textSize="20dp"
+                android:textSize="20sp"
+                android:fontFamily="@font/roboto"
                 android:textStyle="bold" />
 
             <TextView
@@ -101,6 +106,8 @@
                 android:layout_below="@id/ata2"
                 android:layout_marginEnd="0dp"
                 android:paddingStart="10dp"
+                android:fontFamily="@font/work_sans"
+                android:textSize="14sp"
                 android:text="Michael Goodrich, PhD in Computer Science from Purdue University, 1987; Chancellor's Professor of Computer Science at University of California, Irvine; co-author (with Tamassia) of three other Wiley textbooks and a new computer security text, Addison Wesley, 2011. Roberto Tamassia, PhD in Electrical and Computer Engineering from the University of Illinois at Urbana-Champaign, 1988; Plastech Professor of Computer Science and Chair of the CS Dept at Brown University; co-author with Goodrich, see texts above. Michael Goldwasser, PhD in Computer Science from Stanford University, 1997; Associate Professor and Director of CS at St. Louis University; author of Object-Oriented Programming in Python, Pearson, 2008." />
 
             <TextView
@@ -116,7 +123,8 @@
                 android:layout_below="@id/ata"
                 android:text="Buy This Book"
                 android:textColor="#090000"
-                android:textSize="20dp"
+                android:textSize="20sp"
+                android:fontFamily="@font/roboto"
                 android:textStyle="bold" />
 
             <TextView
@@ -157,7 +165,8 @@
                 android:layout_marginTop="29dp"
                 android:text="Amazon"
                 android:textColor="#0C0000"
-                android:textSize="20dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/varela_round"
                 android:textStyle="bold" />
 
             <TextView
@@ -166,7 +175,9 @@
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="94dp"
                 android:layout_below="@id/flp"
-                android:text="Rs. 13,181" />
+                android:text="Rs. 13,181"
+                android:fontFamily="@font/libre_franklin_bold"
+                android:textSize="11sp"/>
 
             <Button
                 android:id="@+id/buy41"
@@ -198,9 +209,10 @@
                 android:layout_below="@id/btb"
                 android:layout_marginTop="10dp"
                 android:text="Flipkart"
+                android:fontFamily="@font/varela_round"
                 android:textStyle="bold"
                 android:textColor="#0C0000"
-                android:textSize="20dp" />
+                android:textSize="16sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -208,7 +220,9 @@
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="95dp"
                 android:layout_below="@id/amz"
-                android:text="Rs. 14,069" />
+                android:text="Rs. 14,069"
+                android:fontFamily="@font/libre_franklin_bold"
+                android:textSize="11sp"/>
 
             <Button
                 android:id="@+id/buy42"
@@ -229,7 +243,9 @@
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="93dp"
                 android:layout_marginTop="90dp"
-                android:text="Author: Michael T Goodrich" />
+                android:text="Author: Michael T Goodrich"
+                android:fontFamily="@font/libre_franklin_bold"
+                android:textSize="11sp"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -237,14 +253,18 @@
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="93dp"
                 android:layout_marginTop="109dp"
-                android:text="Language: English" />
+                android:text="Language: English"
+                android:fontFamily="@font/libre_franklin_bold"
+                android:textSize="11sp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="92dp"
                 android:layout_marginTop="130dp"
-                android:text="Paper Back: 768 Pages" />
+                android:text="Paper Back: 768 Pages"
+                android:fontFamily="@font/libre_franklin_bold"
+                android:textSize="11sp"/>
 
         </RelativeLayout>
     </ScrollView>

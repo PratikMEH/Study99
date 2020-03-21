@@ -92,8 +92,9 @@
                                         android:layout_centerHorizontal="true"
                                         android:layout_marginTop="10dp"
                                         android:layout_marginBottom="10dp"
+                                        android:fontFamily="@font/freckle_face"
                                         android:text="Profile"
-                                        android:textSize="16dp">
+                                        android:textSize="16sp">
 
                                     </TextView>
 
@@ -134,8 +135,9 @@
                                         android:layout_centerHorizontal="true"
                                         android:layout_marginTop="10dp"
                                         android:layout_marginBottom="10dp"
+                                        android:fontFamily="@font/freckle_face"
                                         android:text="Topics"
-                                        android:textSize="16dp">
+                                        android:textSize="16sp">
 
                                     </TextView>
 
@@ -185,6 +187,7 @@
                                         android:layout_centerHorizontal="true"
                                         android:layout_marginTop="10dp"
                                         android:layout_marginBottom="10dp"
+                                        android:fontFamily="@font/freckle_face"
                                         android:text="Books"
                                         android:textSize="16sp">
 
@@ -228,6 +231,7 @@
                                         android:layout_centerHorizontal="true"
                                         android:layout_marginTop="10dp"
                                         android:layout_marginBottom="10dp"
+                                        android:fontFamily="@font/freckle_face"
                                         android:text="Activity"
                                         android:textSize="16sp">
 
@@ -278,6 +282,7 @@
                                         android:layout_centerHorizontal="true"
                                         android:layout_marginTop="10dp"
                                         android:layout_marginBottom="10dp"
+                                        android:fontFamily="@font/freckle_face"
                                         android:text="Bookmarks"
                                         android:textSize="16sp">
 
@@ -322,6 +327,7 @@
                                         android:layout_centerHorizontal="true"
                                         android:layout_marginTop="10dp"
                                         android:layout_marginBottom="10dp"
+                                        android:fontFamily="@font/freckle_face"
                                         android:text="Recommendation"
                                         android:textSize="16sp">
 
@@ -345,13 +351,14 @@
                             android:orientation="horizontal">
 
                             <androidx.cardview.widget.CardView
-                                android:layout_width="195dp"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="fill"
-                                android:layout_marginRight="5dp">
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1">
 
                                 <RelativeLayout
-                                    android:layout_width="195dp"
+                                    android:layout_width="match_parent"
                                     android:layout_height="match_parent">
 
                                     <ImageView
@@ -368,8 +375,9 @@
                                         android:layout_height="wrap_content"
                                         android:layout_below="@id/imv7"
                                         android:layout_centerHorizontal="true"
-                                        android:layout_marginTop="50dp"
+                                        android:layout_marginTop="10dp"
                                         android:layout_marginBottom="10dp"
+                                        android:fontFamily="@font/freckle_face"
                                         android:text="View PDF"
                                         android:textSize="16sp">
 
@@ -386,8 +394,52 @@
                             </androidx.cardview.widget.CardView>
 
 
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_weight="1">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:id="@+id/imv8"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:layout_centerInParent="true"
+                                        android:contentDescription="TODO"
+                                        android:src="@drawable/youtube_logo">
+
+                                    </ImageView>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/imv8"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:fontFamily="@font/freckle_face"
+                                        android:text="Youtube Lectures"
+                                        android:textSize="16sp">
+
+                                    </TextView>
+
+                                    <Button
+                                        android:id="@+id/vdobtn"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@android:color/transparent">
+
+                                    </Button>
+                                </RelativeLayout>
+                            </androidx.cardview.widget.CardView>
 
                         </LinearLayout>
+
 
                     </LinearLayout>
 

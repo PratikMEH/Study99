@@ -10,7 +10,7 @@ import android.view.inputmethod.InputConnectionWrapper;
 import android.widget.Button;
 
 public class Dashboard extends AppCompatActivity {
-    Button profile,topic,books,activity,bookmark,recommendation,pdf;
+    Button profile,topic,books,activity,bookmark,recommendation,pdf,video;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +24,7 @@ public class Dashboard extends AppCompatActivity {
         bookmark=findViewById(R.id.bkkmrkbtn);
         recommendation=findViewById(R.id.rcmndbtn);
         pdf=findViewById(R.id.pdfbtn);
+        video=findViewById(R.id.vdobtn);
 
 
         profile.setOnClickListener(new View.OnClickListener() {

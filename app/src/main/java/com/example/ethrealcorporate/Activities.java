@@ -31,6 +31,7 @@ public class Activities extends AppCompatActivity implements NavigationView.OnNa
         navigationView2=findViewById(R.id.navigation_view);
         actionBarDrawerToggle2= new ActionBarDrawerToggle(this,drawerLayout,toolbar2,(R.string.open),(R.string.close));
         drawerLayout.addDrawerListener(actionBarDrawerToggle2);
+        actionBarDrawerToggle2.getDrawerArrowDrawable().setColor(getResources().getColor(R.color.white));
         actionBarDrawerToggle2.setDrawerIndicatorEnabled(true);
         actionBarDrawerToggle2.syncState();
         navigationView2.setNavigationItemSelectedListener(this);
